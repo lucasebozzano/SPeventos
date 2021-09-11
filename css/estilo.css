@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*encabezado fijo 
+*/
+.grilla{
+    display: grid;
+    grid-template-columns: 20% 30% 20% 30%;
+    grid-template-rows: 30% 50% 25% 10%;
+    grid-template-areas: "header   header   header header"
+                         "producto producto producto producto"
+                         "lista   lista   lista lista"
+                         "footer footer footer footer";
+
+}
+
+h1{
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 80px;
+    font-family: 'Poppins', sans-serif;
+    
+    
+
+}
+.logo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    grid: header;
+    margin: 0px 0px 0px 0px;
+    
+    
+   
+}
+
+
+
+body{
+    
+    background-color: #efefef
+    
+    
+    
+    
+}
+header{
+    display: grid;
+    grid-area: header;
+    height: 100%;
+    width: 100%;
+}
+/*
+header{
+    grid-area: header;
+    background-image: url("fondo-pagina-web1.jpg");
+    height: 100%
+   
+}
+*/
+
+nav{
+    text-align: right;
+    background-color: #efc7ce
+}
+a:hover{
+    background-color: #d8e2dc;
+    color: #fec89a;
+
+}
+a{
+    
+    font-size: 20px;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: gray
+    
+    
+}
+
+
+.cajafooter{
+    background-color: #d8e2dc;
+    text-align: left;
+    width: 100%;
+
+}
+footer{
+    grid-area: footer;
+    width: 100%;
+    height: 100%;
+    background-color: #efc7ce;
+    text-align: center;
+}
+/*fin del encabezado
+/* INDEX
+*/
+
+.previa{
+    
+    grid-area: producto;
+    justify-self: center;
+    width: auto;
+    
+
+}
+
+.lista1{
+    grid-area: lista;
+    justify-self: center;
+    
+}
+
+ul{
+    grid-area: producto;
+    list-style-type: none;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+    font-size: 45px;
+    text-align: center;
+    line-height: 2;
+    margin: 1% 2% 0% 20%
+    
+}
+
+.colorLista{
+    
+
+    color: gray
+    
+
+}
+
+
+
+
+
+/* FIN INDEX
+*/
+
+/* SERVICIOS
+*/
+table{
+    
+    text-align: center;
+    margin: 10% 30% 30% 30%
+    
+}
+th{
+    color: #070707;
+    font-family: 'Fjalla One', sans-serif;
+    background-color: white;
+    width: 500px;
+    column-rule-style: solid re;
+}
+td{
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 100;
+    height: 50px
+    
+    
+}
+
+
+/*FIN SERVICIOS */
+
+/* GALERIA */
+
+
+
+
+.imagenes1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 400px;
+    width: 400px;
+    align-items: center;
+    margin: 20px 20px 20px 20px;
+}
+.imagenes1 :hover{
+    transform: scale(1.2,1.2);
+    transition: 1s;
+}
+.imagenes2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 400px;
+    width: 400px;
+    align-items: center;
+    margin: 20px 20px 20px 20px;
+}
+.imagenes2 :hover{
+    transform: scale(1.2,1.2);
+    transition: 1s;
+}
+
+.imagenes3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 400px;
+    width: 400px;
+    align-items: center;
+    margin: 20px 20px 20px 20px;
+}
+.imagenes3 :hover{
+    transform: scale(1.2,1.2);
+    transition: 1s;
+}
+
+
+img{
+    margin: 5px 5px 5px 5px;
+    
+
+}
+    
+
+
+/* FIN GALERIA */
+
+form{
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Poppins', sans-serif; 
+}
+
+/* SOBRE MI */
+
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: gray;
+    background-color: white;
+    
+
+}
+.cajaflex{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+    
+  
+    
+    
+}
+.sobreMi{
+    color: teal;
+    text-align: left;
+    line-height: 2;
+
+    font-family: 'Poppins', sans-serif;
+    margin: 10% 10% 50% 10%  ;
+    border: 5px solid white;
+    padding: 10px 10px 10px 10px;
+    margin: 5% 1% 3% 50%;
+
+    
+
+}
+
+.sobreMi2{
+    color: teal;
+    text-align: left;
+    line-height: 2;
+
+    font-family: 'Poppins', sans-serif;
+    margin: 10% 10% 50% 10%  ;
+    border: 5px solid white;
+    padding: 10px 10px 10px 10px;
+    margin: 5% 1% 10% 50%;
+    
+
+
+}
+
+/* FIN SOBRE MI */
+
+/* CONTACTO */
+
+form{
+    margin: 20px;
+    padding: 20px;
+    content: 20px;
+    background-image: linear-gradient(rgb(243, 212, 217), white );
+
+}
+fieldset{
+    padding: 15px;
+}
+/* FIN CONTACTO */
